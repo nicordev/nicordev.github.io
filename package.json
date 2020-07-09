@@ -1,0 +1,9 @@
+{
+    "name": "nicordev-tips",
+    "scripts": {
+        "dev": "nuxt",
+        "build": "nuxt build",
+        "start": "nuxt start",
+        "generate": "nuxt generate"
+    }
+}
