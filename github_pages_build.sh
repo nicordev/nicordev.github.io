@@ -12,10 +12,16 @@ removeElementsToRemove() {
     rm -rf $(listElementsToRemove)
 }
 
+buildDistFolder() {
+    cd './source'
+    npm run generate
+}
+
+moveDistFilesToRoot() {
+    mv --force ./dist/* ../
+    mv --force ./dist/.* ../
+}
+
 removeElementsToRemove
-
-cd './source'
-npm run generate
-
-mv --force ./dist/* ../
-mv --force ./dist/.* ../
+buildDistFolder
+moveDistFilesToRoot

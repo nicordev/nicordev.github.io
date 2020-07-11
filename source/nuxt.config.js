@@ -1,5 +1,5 @@
-// export default {
-//     modules: [
-//         "@nuxt/content",
-//     ],
-// };
+export default {
+    modules: [
+        "@nuxt/content",
+    ],
+};
