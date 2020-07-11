@@ -13,7 +13,9 @@ removeElementsToRemove() {
 }
 
 buildDistFolder() {
-    cd './source'
+    if [[ $(pwd) != *"source"* ]]; then
+        cd './source'
+    fi
     npm run generate
 }
 
@@ -25,3 +27,4 @@ moveDistFilesToRoot() {
 removeElementsToRemove
 buildDistFolder
 moveDistFilesToRoot
+
