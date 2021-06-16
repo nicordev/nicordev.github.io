@@ -1,2 +1,3 @@
-# nicordev.github.io
-My github pages blog.
+# Nicordev
+
+Here will be some articles about web programming and Linux.
